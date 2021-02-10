@@ -1,2 +1,2 @@
 # Vortex-Reigstery
-Kayıtlar sizi bekler &lt;3
+Kayıtlar sizi bekller &lt;3
