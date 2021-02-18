@@ -22,13 +22,13 @@ exports.execute = async (client, message, args) => {
     if(!isim) return message.channel.send(embed.setDescription('Geçerli bir isim belirlemelisin!')).then(x => x.delete({timeout: 5000}));
     if(isNaN(yas)) return message.channel.send(embed.setDescription('Geçerli bir yaş belirlemelisin!')).then(x => x.delete({timeout: 5000}));
     
-    user.setNickname(`${tag} ${isim} | ${yas}`)
-    user.setNickname(`${tag} ${isim} | ${yas}`)
-    user.roles.add(Vortex.Man1)
-    user.roles.add(Vortex.Man2)
-    user.roles.remove(Vortex.UnReg)
-    user.roles.remove(Vortex.Woman1)
-    user.roles.remove(Vortex.Woman2)
+    await user.setNickname(`${tag} ${isim} | ${yas}`)
+    await user.setNickname(`${tag} ${isim} | ${yas}`)
+    await user.roles.add(Vortex.Man1)
+    await user.roles.add(Vortex.Man2)
+    await user.roles.remove(Vortex.UnReg)
+    await user.roles.remove(Vortex.Woman1)
+    await user.roles.remove(Vortex.Woman2)
 
     kb.add(`teyit.${message.author.id}.erkek`, 1)
     var ToplamKayıt = kb.get(`teyit.${message.author.id}.kiz`) + kb.get(`teyit.${message.author.id}.erkek`);
