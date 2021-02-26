@@ -22,7 +22,7 @@ exports.execute = async (client, message, args) => {
     if(!isim) return message.channel.send(embed.setDescription('Geçerli bir isim belirlemelisin!')).then(x => x.delete({timeout: 5000}));
     if(isNaN(yas)) return message.channel.send(embed.setDescription('Geçerli bir yaş belirlemelisin!')).then(x => x.delete({timeout: 5000}));
     
-if(user.roles.cache.get(Vortex.Man1)) return message.channel.send(embed.setDescription(`Bu üye zaten kayıt olmuş.`)).then(x => x.delete({timeout: 5000}));
+    if(user.roles.cache.get(Vortex.Man1)) return message.channel.send(embed.setDescription(`Bu üye zaten kayıt olmuş!`)).then(x => x.delete({timeout: 5000}));
     
     await user.setNickname(`${tag} ${isim} | ${yas}`)
     await user.setNickname(`${tag} ${isim} | ${yas}`)
