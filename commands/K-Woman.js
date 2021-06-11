@@ -46,6 +46,7 @@ exports.execute = async (client, message, args) => {
     let woman = new MessageEmbed().setColor("RED").setTimestamp().setFooter(`${Vortex.Footer} • (${ToplamKayıt} Toplam Kayıt)`)
     .setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true}))
     .setDescription(`\`>\` Yetkili: ${message.author} \n\`>\` Kayıt Olan: ${user} \n\`>\` Verilen Roller: <@&${Vortex.Woman1}>,<@&${Vortex.Woman2}> \n\`>\` Yeni İsmi: \`${tag} ${isim} | ${yas}\``)
+    .setThumbnail(`https://media.giphy.com/media/ynx1sj5Wz2atO/giphy.gif`)
     message.channel.send(woman)
 
     let w = new MessageEmbed().setColor("RED").setTimestamp().setFooter(Vortex.Footer)
