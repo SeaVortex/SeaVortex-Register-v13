@@ -1,1 +1,1 @@
-# Merhaba su register tanıtma
+# Merhaba cu register tanıtma
