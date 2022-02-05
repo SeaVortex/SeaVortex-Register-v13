@@ -21,6 +21,7 @@ module.exports = {
         let age = args[2];
         if(!nick) return message.reply({embeds: [embeds.setDescription("Geçerli bir isim belirlemelisin!")]}).then(timeout).catch(e => { });
         if(isNaN(age)) return message.reply({embeds: [embeds.setDescription("Geçerli bir yaş belirlemelisin!")]}).then(timeout).catch(e => { });
+        if(vortex.roles.woman && vortex.roles.woman.some(rol => user.roles.cache.has(rol))) return message.channel.send({ embeds: [embeds.setDescription("Bu kişi zaten kayıtlı.")]}).then(timeout).catch(e => { })
         await user.setNickname(`${tag} ${age} ${nick.charAt(0).toUpperCase() + nick.slice(1).toLowerCase()}${age ? ` ${vortex.panels.nametag} ${age}` : ``}`).catch(e => { });
         await user.roles.add(vortex.roles.woman).catch(e => { });
         await user.roles.remove(vortex.roles.unreg).catch(e => { });
