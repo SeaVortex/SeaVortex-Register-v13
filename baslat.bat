@@ -1,5 +1,5 @@
 echo off
 cls
 :a
-node bot.js
+node app.js
 goto a
