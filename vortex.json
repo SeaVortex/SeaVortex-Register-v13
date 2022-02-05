@@ -1,0 +1,32 @@
+{
+    "panels": {
+       "botowner": "728360891644641303",
+       "token": "TOKEN",
+       "prefix": "PREFIX",
+       "mongoURL": "MONGOURL",
+       "bio": "V13 REGISTER",
+       "status": "idle",
+       "tag": "SUNUCU TAGI",
+       "nametag": "|"
+
+    },
+    "staffs": {
+        "foundar": "",
+        "owner": "",
+        "register": ""
+    },
+    "roles": {
+        "woman": ["", ""],
+        "man": ["", ""],
+        "unreg": ""
+    },
+    "logs": {
+        "woman": "",
+        "man": "",
+        "chat": ""
+    },
+    "emojis": {
+        "red": "RED EMOJİ ÖNEK: <:Red:880392434079645727>",
+        "onay": "ONAY EMOJİ ÖNEK: <:Onay:880392434092236850>"
+    }
+}
