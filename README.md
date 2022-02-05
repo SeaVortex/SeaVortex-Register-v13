@@ -1,4 +1,4 @@
-# Register Mongo Database
+# Register Mongo Databaseli
 
 Merhaba, size çok önceden atdığım alt yapıyı geliştirmek istedim quick.db den mongodb ye geçiş yaptım alt yapı v13 herhangi gibi bir sorun olursa bana ulaşabilirsiniz.
 
