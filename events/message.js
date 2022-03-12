@@ -39,7 +39,7 @@ if(timestamps.has(message.author.id)) {
     }
 }
 let timeout = (e) => setTimeout(() => { e.delete(); }, 5000);
-let embeds = new Discord.MessageEmbed().setFooter(client.users.cache.get(vortex.panels.botowner).tag, client.users.cache.get(vortex.panels.botowner).avatarURL({dynamic: true})).setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true})).setTimestamp()
+let embeds = new Discord.MessageEmbed().setFooter({ text: client.users.cache.get(vortex.panels.botowner).tag, iconURL: client.users.cache.get(vortex.panels.botowner).avatarURL({dynamic: true})}).setAuthor({ name: message.member.displayName, iconURL: message.author.avatarURL({dynamic: true})}).setTimestamp()
 timestamps.set(message.author.id, now);
 setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 try {
